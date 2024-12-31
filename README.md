@@ -4,7 +4,7 @@
     <img src="./img/cover.png/" width="80%">
 <p/>
 
-Welcome to the KRYPTO web design project. This project is a web-based interface for discovering and collecting rare NFTs. You can view live site at https://gg.krypto.netlify.app/! The design is inspired by the Figma design available [here](https://www.figma.com/design/gayPC9hS8ZhcDT33ts6wlH/).
+Welcome to the KRYPTO web design project. This project is a web-based interface for discovering and collecting rare NFTs. You can view live site at https://ggkrypto.netlify.app/! The design is inspired by the Figma design available [here](https://www.figma.com/design/gayPC9hS8ZhcDT33ts6wlH/).
 
 ## Table of Contents
 
@@ -27,7 +27,7 @@ KRYPTO is a secure marketplace for buying and selling unique crypto assets. This
 
 ## Live Site
 
-Check out the live site [here](https://gg.krypto.netlify.app/).
+Check out the live site [here](https://ggkrypto.netlify.app/).
 
 ## Usage
 
