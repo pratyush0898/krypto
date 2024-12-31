@@ -1,0 +1,1220 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:900|Outfit:900,400,600,500,700");
+
+.screen textarea:focus,
+.screen input:focus {
+    outline: none;
+}
+
+.screen * {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+.screen div {
+    -webkit-text-size-adjust: none;
+}
+
+.component-wrapper a {
+    display: contents;
+    pointer-events: auto;
+    text-decoration: none;
+}
+
+.component-wrapper * {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.component-wrapper a *,
+.component-wrapper input,
+.component-wrapper video,
+.component-wrapper iframe {
+    pointer-events: auto;
+}
+
+.component-wrapper.not-ready,
+.component-wrapper.not-ready * {
+    visibility: hidden !important;
+}
+
+.screen a {
+    display: contents;
+    text-decoration: none;
+}
+
+.full-width-a {
+    width: 100%;
+}
+
+.full-height-a {
+    height: 100%;
+}
+
+.container-center-vertical {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    pointer-events: none;
+}
+
+.container-center-vertical>* {
+    flex-shrink: 0;
+    pointer-events: auto;
+}
+
+.container-center-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    pointer-events: none;
+    width: 100%;
+}
+
+.container-center-horizontal>* {
+    flex-shrink: 0;
+    pointer-events: auto;
+}
+
+.auto-kryptoted div {
+    --z-index: -1;
+    opacity: 0;
+    position: absolute;
+}
+
+.auto-kryptoted input {
+    --z-index: -1;
+    opacity: 0;
+    position: absolute;
+}
+
+.auto-kryptoted .container-center-vertical,
+.auto-kryptoted .container-center-horizontal {
+    opacity: 1;
+}
+
+.overlay-base {
+    display: none;
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.overlay-base.kryptote-appear {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+}
+
+.overlay-base.kryptote-disappear {
+    display: block;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.overlay-base.kryptote-disappear * {
+    pointer-events: none;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.align-self-flex-start {
+    align-self: flex-start;
+}
+
+.align-self-flex-end {
+    align-self: flex-end;
+}
+
+.align-self-flex-center {
+    align-self: flex-center;
+}
+
+.valign-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.valign-text-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+input:focus {
+    outline: none;
+}
+
+.listeners-active,
+.listeners-active * {
+    pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000000;
+    --chetwode-blue: #8582cf;
+    --gulf-blue: #181857;
+    --white: #ffffff;
+
+    --font-size-l: 24px;
+    --font-size-m: 20px;
+    --font-size-s: 18px;
+    --font-size-xl: 32px;
+    --font-size-xs: 16px;
+    --font-size-xxl: 64px;
+    --font-size-xxxl: 78px;
+
+    --font-family-outfit: "Outfit", Helvetica;
+    --font-family-roboto: "Roboto", Helvetica;
+}
+
+.outfit-semi-bold-white-24px {
+    color: var(--white);
+    font-family: var(--font-family-outfit);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 600;
+}
+
+.outfit-normal-white-20px {
+    color: var(--white);
+    font-family: var(--font-family-outfit);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+}
+
+.outfit-normal-white-16px {
+    color: var(--white);
+    font-family: var(--font-family-outfit);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 400;
+}
+
+.outfit-semi-bold-white-32px {
+    color: var(--white);
+    font-family: var(--font-family-outfit);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: 600;
+}
+
+.outfit-normal-white-18px {
+    color: var(--white);
+    font-family: var(--font-family-outfit);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+/* screen - home-page */
+
+.home-page {
+    background-color: #000235;
+    height: 4471px;
+    overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
+    width: 1440px;
+}
+
+.home-page .header-xVxyAW {
+    background-color: transparent;
+    height: 28px;
+    left: 183px;
+    position: absolute;
+    top: 50px;
+    width: 1075px;
+}
+
+.home-page .krypto-FLHHzU {
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 900;
+    height: auto;
+    left: 0px;
+    letter-spacing: 1.20px;
+    line-height: 27.5px;
+    text-align: center;
+    top: 0px;
+    width: 110px;
+}
+
+.home-page .about-FLHHzU {
+    background-color: transparent;
+    height: 28px;
+    left: 597px;
+    letter-spacing: 0.00px;
+    line-height: 27.5px;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    width: 75px;
+}
+
+.home-page .pricing-FLHHzU {
+    background-color: transparent;
+    height: 28px;
+    left: 728px;
+    letter-spacing: 0.00px;
+    line-height: 27.5px;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    width: 75px;
+}
+
+.home-page .contact-FLHHzU {
+    height: 28px;
+    left: 859px;
+    line-height: 27.5px;
+    text-align: center;
+    top: 0px;
+    width: 75px;
+}
+
+.home-page .buy-nfts-FLHHzU {
+    height: 28px;
+    left: 990px;
+    letter-spacing: 0.00px;
+    top: 0px;
+    width: 75px;
+}
+
+.home-page .back-ground-effects-xVxyAW {
+    background-color: transparent;
+    height: 3619px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 1440px;
+}
+
+.home-page .hero-xVxyAW {
+    background-color: transparent;
+    height: 486px;
+    left: 183px;
+    position: absolute;
+    top: 200px;
+    width: 1073px;
+}
+
+.home-page .object-other-07-rrtvGn {
+    left: 597px;
+}
+
+.home-page .object-other-07-ixupGv {
+    left: 23px;
+    object-fit: cover;
+}
+
+.home-page .title-rrtvGn {
+    background-color: transparent;
+    color: var(--white);
+    font-family: var(--font-family-outfit);
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 900;
+    height: 288px;
+    left: 2px;
+    letter-spacing: 3.24px;
+    line-height: 96px;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    width: 538px;
+}
+
+.home-page .the-most-secure-mark-rrtvGn {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: 0.00px;
+    line-height: 27px;
+    position: absolute;
+    text-align: left;
+    top: 304px;
+    width: 373px;
+}
+
+.home-page .rectangle-20-rrtvGn {
+    background-color: var(--chetwode-blue);
+    border-radius: 42px;
+    height: 84px;
+    left: 0px;
+    position: absolute;
+    top: 402px;
+    width: 291px;
+}
+
+.home-page .rectangle-21-rrtvGn {
+    background-color: transparent;
+    border: 2px solid;
+    border-color: var(--white);
+    border-radius: 42px;
+    height: 88px;
+    left: 306px;
+    position: absolute;
+    top: 400px;
+    width: 295px;
+}
+
+.home-page .buy-nfts-rrtvGn {
+    height: 31px;
+    left: 89px;
+    letter-spacing: 0.00px;
+    top: 428px;
+    white-space: nowrap;
+    width: 112px;
+}
+
+.home-page .sell-nfts-rrtvGn {
+    background-color: transparent;
+    height: 31px;
+    left: 395px;
+    letter-spacing: 0.00px;
+    line-height: 27.5px;
+    position: absolute;
+    text-align: center;
+    top: 428px;
+    white-space: nowrap;
+    width: 118px;
+}
+
+.home-page .featured-xVxyAW {
+    background-color: transparent;
+    height: 176px;
+    left: 260px;
+    position: absolute;
+    top: 880px;
+    width: 899px;
+}
+
+.home-page .featured-on-mSj9r0 {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: 0.00px;
+    line-height: 27.5px;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    width: 373px;
+}
+
+.home-page .group-33-mSj9r0 {
+    background-color: transparent;
+    height: 129px;
+    left: 8px;
+    position: absolute;
+    top: 55px;
+    width: 893px;
+}
+
+.home-page .analytics-xVxyAW {
+    height: 508px;
+    left: 180px;
+    top: 1226px;
+    width: 1074px;
+}
+
+.home-page .built-in-analytics-to-track-your-nfts-XvmmBQ {
+    background-color: transparent;
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 900;
+    height: 252px;
+    left: 495px;
+    letter-spacing: 2.88px;
+    line-height: 84px;
+    position: absolute;
+    text-align: left;
+    top: 34px;
+    width: 573px;
+}
+
+.home-page .use-our-built-in-ana-XvmmBQ {
+    background-color: transparent;
+    height: auto;
+    left: 493px;
+    letter-spacing: 0.00px;
+    line-height: 27px;
+    position: absolute;
+    text-align: left;
+    top: 300px;
+    width: 354px;
+}
+
+.home-page .button-XvmmBQ {
+    height: 100px;
+    left: 493px;
+    top: 408px;
+    width: 372px;
+}
+
+.home-page .rectangle-20-aN6F4h {
+    background-color: var(--chetwode-blue);
+    border-radius: 50px;
+    height: 100px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 370px;
+}
+
+.home-page .view-our-pricing-aN6F4h {
+    background-color: transparent;
+    height: 37px;
+    left: 78px;
+    letter-spacing: 0.00px;
+    line-height: 27.5px;
+    position: absolute;
+    text-align: center;
+    top: 31px;
+    width: 213px;
+}
+
+.home-page .object-other-18-z9fNsH {
+    object-fit: cover;
+}
+
+.home-page .analytics-XvmmBQ {
+    height: auto;
+    left: 511px;
+    letter-spacing: 0.00px;
+    line-height: 27.5px;
+    text-align: left;
+    top: 3px;
+    width: 142px;
+}
+
+.home-page .get-our-app-xVxyAW {
+    height: 492px;
+    left: 190px;
+    top: 1854px;
+    width: 1071px;
+}
+
+.home-page .browse-nf-ts-from-your-smartphone-f6ezR4 {
+    background-color: transparent;
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xxxl);
+    font-style: normal;
+    font-weight: 900;
+    height: 240px;
+    left: 2px;
+    letter-spacing: 2.81px;
+    line-height: 80px;
+    position: absolute;
+    text-align: left;
+    top: 28px;
+    width: 538px;
+}
+
+.home-page .our-krypto-app-is-th-f6ezR4 {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: 0.00px;
+    line-height: 27px;
+    position: absolute;
+    text-align: left;
+    top: 297px;
+    width: 373px;
+}
+
+.home-page .group-34-f6ezR4 {
+    background-color: transparent;
+    height: 90px;
+    left: 0px;
+    position: absolute;
+    top: 402px;
+    width: 336px;
+}
+
+.home-page .rectangle-20-7BKg7S {
+    background-color: var(--chetwode-blue);
+    border-radius: 50px;
+    height: 90px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 334px;
+}
+
+.home-page .download-on-ios-7BKg7S {
+    background-color: transparent;
+    height: 33px;
+    left: 78px;
+    letter-spacing: 0.00px;
+    line-height: 27.5px;
+    position: absolute;
+    text-align: center;
+    top: 28px;
+    white-space: nowrap;
+    width: 178px;
+}
+
+.home-page .object-other-17-f6ezR4 {
+    left: 597px;
+    top: 4px;
+}
+
+.home-page .object-other-17-fRpH8g {
+    left: 0px;
+    object-fit: cover;
+    top: 0px;
+}
+
+.home-page .get-our-app-f6ezR4 {
+    height: auto;
+    left: 13px;
+    letter-spacing: 0.00px;
+    line-height: 27.5px;
+    text-align: left;
+    top: 0px;
+    width: 373px;
+}
+
+.home-page .x247-xVxyAW {
+    background-color: transparent;
+    height: 493px;
+    left: 180px;
+    position: absolute;
+    top: 2466px;
+    width: 1074px;
+}
+
+.home-page .sell-your-nfts-from-anywhere-at-any-time-3MCQvu {
+    background-color: transparent;
+    color: var(--white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xxxl);
+    font-style: normal;
+    font-weight: 900;
+    height: 234px;
+    left: 495px;
+    letter-spacing: 2.81px;
+    line-height: 78px;
+    position: absolute;
+    text-align: left;
+    top: 28px;
+    width: 573px;
+}
+
+.home-page .with-our-easy-to-use-3MCQvu {
+    background-color: transparent;
+    height: auto;
+    left: 493px;
+    letter-spacing: 0.00px;
+    line-height: 27px;
+    position: absolute;
+    text-align: left;
+    top: 285px;
+    width: 354px;
+}
+
+.home-page .button-3MCQvu {
+    height: 100px;
+    left: 493px;
+    top: 393px;
+    width: 372px;
+}
+
+.home-page .rectangle-20-GzRCfH {
+    background-color: var(--chetwode-blue);
+    border-radius: 50px;
+    height: 100px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 370px;
+}
+
+.home-page .get-started-GzRCfH {
+    background-color: transparent;
+    height: 37px;
+    left: 123px;
+    letter-spacing: 0.00px;
+    line-height: 27.5px;
+    position: absolute;
+    text-align: center;
+    top: 31px;
+    width: 126px;
+}
+
+.home-page .object-other-12-3MCQvu {
+    top: 24px;
+}
+
+.home-page .object-other-12-DWuWNX {
+    object-fit: cover;
+    top: 0px;
+}
+
+.home-page .x247-access-3MCQvu {
+    background-color: transparent;
+    height: auto;
+    left: 503px;
+    letter-spacing: 0.38px;
+    line-height: 27.5px;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+}
+
+.home-page .testimonials-xVxyAW {
+    height: 532px;
+    left: 180px;
+    top: 3079px;
+    width: 1069px;
+}
+
+.home-page .testimonials-qMz5NS {
+    color: var(--white);
+    font-family: var(--font-family-outfit);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    height: 28px;
+    left: 450px;
+    letter-spacing: 0.45px;
+    line-height: 27.5px;
+    text-align: center;
+    top: 0px;
+    width: 166px;
+}
+
+.home-page .read-what-others-have-to-say-qMz5NS {
+    background-color: transparent;
+    color: var(--white);
+    font-family: var(--font-family-outfit);
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    height: 106px;
+    left: 344px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 48px;
+    width: 377px;
+}
+
+.home-page .testimonials-1-qMz5NS {
+    background-color: transparent;
+    height: 348px;
+    left: 0px;
+    position: absolute;
+    top: 184px;
+    width: 348px;
+}
+
+.home-page .rectangle-22-SD4umm {
+    background-color: var(--gulf-blue);
+    border-radius: 24px;
+    height: 268px;
+    top: 80px;
+    width: 344px;
+}
+
+.home-page .mask-group-SD4umm {
+    width: 164px;
+}
+
+.home-page .olivia-cole-SD4umm {
+    background-color: transparent;
+    height: 28px;
+    left: 93px;
+    letter-spacing: 0.00px;
+    line-height: 27.5px;
+    position: absolute;
+    text-align: center;
+    top: 186px;
+    white-space: nowrap;
+    width: 159px;
+}
+
+.home-page .lorem-ipsum-dolor-si-SD4umm {
+    width: 268px;
+}
+
+.home-page .testimonials-2-qMz5NS {
+    background-color: transparent;
+    height: 348px;
+    left: 360px;
+    position: absolute;
+    top: 184px;
+    width: 349px;
+}
+
+.home-page .rectangle-22-B8NxIQ {
+    background-color: var(--gulf-blue);
+    border-radius: 24px;
+    height: 268px;
+    top: 80px;
+    width: 345px;
+}
+
+.home-page .mask-group-B8NxIQ {
+    width: 165px;
+}
+
+.home-page .evan-white-B8NxIQ {
+    background-color: transparent;
+    height: 28px;
+    left: 93px;
+    letter-spacing: 0.00px;
+    line-height: 27.5px;
+    position: absolute;
+    text-align: center;
+    top: 186px;
+    white-space: nowrap;
+    width: 159px;
+}
+
+.home-page .lorem-ipsum-dolor-si-B8NxIQ {
+    width: 269px;
+}
+
+.home-page .testimonials-3-qMz5NS {
+    background-color: transparent;
+    height: 348px;
+    left: 720px;
+    position: absolute;
+    top: 184px;
+    width: 349px;
+}
+
+.home-page .rectangle-22-pqC8h1 {
+    background-color: var(--gulf-blue);
+    border-radius: 24px;
+    height: 268px;
+    top: 80px;
+    width: 345px;
+}
+
+.home-page .mask-group-pqC8h1 {
+    width: 165px;
+}
+
+.home-page .jessica-page-pqC8h1 {
+    background-color: transparent;
+    height: 28px;
+    left: 78px;
+    letter-spacing: 0.00px;
+    line-height: 27.5px;
+    position: absolute;
+    text-align: center;
+    top: 186px;
+    white-space: nowrap;
+    width: 190px;
+}
+
+.home-page .lorem-ipsum-dolor-si-pqC8h1 {
+    width: 269px;
+}
+
+.home-page .are-you-ready-xVxyAW {
+    height: 400px;
+    left: 183px;
+    top: 3731px;
+    width: 1069px;
+}
+
+.home-page .rectangle-23-opi1LO {
+    background: linear-gradient(180deg, rgb(81.00000277161598, 81.00000277161598, 198.00000339746475) 0%, rgb(99.8573724925518, 106.7628863453865, 200.65596967935562) 23.848800361156464%, rgb(109.95715454220772, 120.56117713451385, 202.07847654819489) 46.1454302072525%, rgb(125.92128351330757, 142.37132281064987, 204.32693749666214) 77.03416347503662%, rgb(152.0000061392784, 178.00000458955765, 208.0000028014183) 100%);
+    background-color: transparent;
+    border-radius: 32px;
+    height: 400px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 1065px;
+}
+
+.home-page .button-opi1LO {
+    height: 84px;
+    left: 387px;
+    top: 246px;
+    width: 293px;
+}
+
+.home-page .rectangle-22-IJoAtk {
+    background-color: var(--black);
+    border-radius: 42px;
+    height: 84px;
+    top: 0px;
+    width: 291px;
+}
+
+.home-page .buy-nfts-IJoAtk {
+    color: var(--white);
+    font-family: var(--font-family-outfit);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    height: 31px;
+    left: 76px;
+    letter-spacing: 0.28px;
+    top: 26px;
+    white-space: nowrap;
+    width: 140px;
+}
+
+.home-page .be-a-part-of-the-next-big-thing-opi1LO {
+    background-color: transparent;
+    color: var(--white);
+    font-family: var(--font-family-outfit);
+    font-size: var(--font-size-xxl);
+    font-style: normal;
+    font-weight: 900;
+    height: 156px;
+    left: 250px;
+    letter-spacing: 2.30px;
+    line-height: 78px;
+    position: absolute;
+    text-align: center;
+    top: 73px;
+    width: 564px;
+}
+
+.home-page .are-you-ready-opi1LO {
+    color: var(--black);
+    font-family: var(--font-family-outfit);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    height: 28px;
+    left: 403px;
+    letter-spacing: 0.45px;
+    line-height: 27.5px;
+    text-align: center;
+    top: 45px;
+    width: 258px;
+}
+
+.home-page .footer-xVxyAW {
+    background-color: transparent;
+    height: 220px;
+    left: 0px;
+    position: absolute;
+    top: 4251px;
+    width: 1458px;
+}
+
+.home-page .rectangle-24-YuF6ZZ {
+    background-color: #0c0f5275;
+    height: 220px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 1440px;
+}
+
+.home-page .rectangle-20-YuF6ZZ {
+    background-color: #1b1c5d;
+    border-radius: 50px;
+    height: 34px;
+    left: 922px;
+    position: absolute;
+    top: 105px;
+    width: 270px;
+}
+
+.home-page .krypto-YuF6ZZ {
+    height: 35px;
+    left: 217px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    text-align: left;
+    top: 21px;
+    width: 75px;
+}
+
+.home-page .join-our-newsletter-YuF6ZZ {
+    background-color: transparent;
+    color: var(--white);
+    font-family: var(--font-family-outfit);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    height: 33px;
+    left: 922px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    position: absolute;
+    text-align: left;
+    top: 22px;
+    width: 293px;
+}
+
+.home-page .home-about-buy-nf-ts-sell-nf-ts-YuF6ZZ {
+    background-color: transparent;
+    height: 144px;
+    left: 397px;
+    letter-spacing: 0.00px;
+    line-height: 31px;
+    position: absolute;
+    text-align: left;
+    top: 68px;
+    width: 69px;
+}
+
+.home-page .browse-nf-ts-buy-nf-ts-sell-nf-ts-YuF6ZZ {
+    background-color: transparent;
+    height: 108px;
+    left: 562px;
+    letter-spacing: 0.00px;
+    line-height: 31px;
+    position: absolute;
+    text-align: left;
+    top: 68px;
+    width: 97px;
+}
+
+.home-page .email-linked-in-instagram-twitter-YuF6ZZ {
+    background-color: transparent;
+    height: 144px;
+    left: 719px;
+    letter-spacing: 0.00px;
+    line-height: 31px;
+    position: absolute;
+    text-align: left;
+    top: 68px;
+    width: 74px;
+}
+
+.home-page .krypto-8EIik8 {
+    color: var(--white);
+    font-family: var(--font-family-outfit);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    height: 25px;
+    left: 397px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    text-align: left;
+    top: 22px;
+    width: 75px;
+}
+
+.home-page .market-YuF6ZZ {
+    background-color: transparent;
+    height: 23px;
+    left: 562px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    position: absolute;
+    text-align: left;
+    top: 22px;
+    width: 90px;
+}
+
+.home-page .contact-YuF6ZZ {
+    height: 23px;
+    left: 719px;
+    line-height: normal;
+    text-align: left;
+    top: 22px;
+    width: 74px;
+}
+
+.home-page .email-address-YuF6ZZ {
+    background-color: transparent;
+    color: #999999fc;
+    font-family: var(--font-family-outfit);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 400;
+    height: 10px;
+    left: 943px;
+    letter-spacing: 0.00px;
+    line-height: 31px;
+    position: absolute;
+    text-align: left;
+    top: 117px;
+    white-space: nowrap;
+    width: 101px;
+}
+
+.home-page .button-YuF6ZZ {
+    height: 34px;
+    left: 1093px;
+    top: 105px;
+    width: 101px;
+}
+
+.home-page .rectangle-20-x4herO {
+    background-color: var(--chetwode-blue);
+    border-radius: 50px;
+    height: 34px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 99px;
+}
+
+.home-page .submit-x4herO {
+    background-color: transparent;
+    color: var(--white);
+    font-family: var(--font-family-outfit);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 500;
+    height: 34px;
+    left: 26px;
+    letter-spacing: 0.00px;
+    line-height: 27.5px;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    width: 48px;
+}
+
+.home-page .analytics {
+    background-color: transparent;
+    position: absolute;
+}
+
+.home-page .are-you-ready {
+    background-color: transparent;
+    position: absolute;
+}
+
+.home-page .button {
+    background-color: transparent;
+    position: absolute;
+}
+
+.home-page .buy-nfts {
+    background-color: transparent;
+    line-height: 27.5px;
+    position: absolute;
+    text-align: center;
+}
+
+.home-page .contact {
+    background-color: transparent;
+    letter-spacing: 0.00px;
+    position: absolute;
+}
+
+.home-page .get-our-app {
+    background-color: transparent;
+    position: absolute;
+}
+
+.home-page .krypto {
+    background-color: transparent;
+    position: absolute;
+}
+
+.home-page .lorem-ipsum-dolor-si {
+    background-color: transparent;
+    height: auto;
+    left: 38px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 233px;
+}
+
+.home-page .mask-group {
+    background-color: transparent;
+    height: 160px;
+    left: 90px;
+    position: absolute;
+    top: 0px;
+}
+
+.home-page .object-other-07 {
+    background-color: transparent;
+    height: 399px;
+    position: absolute;
+    top: 0px;
+    width: 468px;
+}
+
+.home-page .object-other-12 {
+    background-color: transparent;
+    height: 414px;
+    left: 0px;
+    position: absolute;
+    width: 453px;
+}
+
+.home-page .object-other-17 {
+    background-color: transparent;
+    height: 402px;
+    position: absolute;
+    width: 468px;
+}
+
+.home-page .object-other-18 {
+    background-color: transparent;
+    height: 412px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 453px;
+}
+
+.home-page .rectangle-22 {
+    left: 0px;
+    position: absolute;
+}
+
+.home-page .testimonials {
+    background-color: transparent;
+    position: absolute;
+}
